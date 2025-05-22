@@ -3,51 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettbutikk</title>
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+
+    <title>Nettbutikk</title>
+    <link rel="icon" href="./favicon.png" />
   </head>
+
   <body>
     <div id="hero">
       <header>
-        <a href="index.html">
+        <a id="header_link" href="index.html">
           <img
             id="logo"
-            src="./kattelogo.header.png"
+            src="./kattelogo_header.png"
             alt="KattedillaVilla logo"
           />
+          <div id="overskrift_header">
+            <h1>KattedillaVilla</h1>
+            <h2>
+              Ting & tang
+              <br />
+              med kattemotiv
+            </h2>
+          </div>
         </a>
-        <div id="overskrift_header">
-          <h1><a href="index.html">KattedillaVilla</a></h1>
-          <h2>
-            Ting & tang
-            <br />
-            med kattemotiv
-          </h2>
-        </div>
       </header>
+
       <nav>
         <ul>
-          <li><a href="">Hjem</a></li>
-          <li><a href="">Butikk</a></li>
-          <li><a href="">Om oss</a></li>
-          <li><a href="">Kontakt</a></li>
+          <li><a class="hero_nav_option" href="contact.html">Kontakt</a></li>
+          <li><a class="hero_nav_option" href="about_us.html">Om oss</a></li>
+          <li>
+            <a class="hero_nav_option" id="cart_nav" href="cart.html"
+              >Handlekurv</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
-    <aside></aside>
+
     <main>
+      <aside>
+        <section id="cat_menu">
+          <h4>Kat(t)egori</h4>
+          <nav>
+            <ul>
+              <li><a class="cat_option" href="">Dekor</a></li>
+              <li><a class="cat_option" href="">Hjem</a></li>
+              <li><a class="cat_option" href="">Klær</a></li>
+              <li><a class="cat_option" href="">Merch</a></li>
+              <li><a class="cat_option" href="">Annet</a></li>
+            </ul>
+          </nav>
+        </section>
+      </aside>
+
       <section id="new_items">
         <h3>Nye produkter</h3>
-        <div id="news_container">
-          <article class="item"></article>
-          <article class="item"></article>
-          <article class="item"></article>
-          <article class="item"></article>
-          <article class="item"></article>
-          <article class="item"></article>
-          <article class="item"></article>
-          <article class="item"></article>
+        <div id="new_items_container">
+          <article class="item">
+            <a class="item_fig" href="">
+              <figure id="logo_tshirt">
+                <img
+                  class="item_img"
+                  src="./kattelogo_tshirt.png"
+                  alt="T-skjorte med grafisk trykk av nettsidens logo"
+                />
+                <figcaption>
+                  KdVilla <br />
+                  Grafisk T-Skjorte
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+
+          <article class="item">
+            <a href="" class="item_fig">
+              <figure id="logo_retro_sticker">
+                <img
+                  class="item_img"
+                  src="./kattelogo_retro_sticker.png"
+                  alt="Klistremerke av nettidens logo med retro-inspirert preg"
+                />
+                <figcaption>KdVilla <br />Retro Klistremerke</figcaption>
+              </figure>
+            </a>
+          </article>
+
+          <article class="item">
+            <a href="">
+              <figure>
+                <img class="item_img" src="./" alt="Product image" />
+                <figcaption>
+                  Item <br />
+                  _
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="item">
+            <a href="">
+              <figure>
+                <img class="item_img" src="./" alt="Product image" />
+                <figcaption>
+                  Item <br />
+                  _
+                </figcaption>
+              </figure>
+            </a>
+          </article>
         </div>
       </section>
     </main>
